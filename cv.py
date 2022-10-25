@@ -57,8 +57,6 @@ while True:
                 df[['xmin', 'ymin', 'xmax', 'ymax']] = df[['xmin', 'ymin', 'xmax', 'ymax']].astype(int)
                 df_col = pd.concat([df_col, df],ignore_index=True)# for ind in range(len(df)):
                 print(datetime.datetime.now(), ' --- frame ', c, len(df_col))
-                if len(df[df['name'] == 'fire']) > 0:
-                    show_img(img)
         cv2.namedWindow("video", 0)
         cv2.resizeWindow("video", width*3, height*3)
         cv2.imshow('video',drawBoxes(img,df))
