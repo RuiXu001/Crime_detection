@@ -5,7 +5,6 @@ import datetime
 import glob
 import os
 import matplotlib.pyplot as plt
-from mongoengine import *
 import torch
 
 base_dir = r'D:/research/Iot/video'
