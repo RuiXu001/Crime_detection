@@ -48,7 +48,7 @@ while True:
     ret, img = cap.read()
     if ret:
         c += 1
-        if c % (frames_num * interval) == 0: # detect every 'interval' second
+        if c % (frames_num * interval) == 1: # detect every 'interval' second
             results = model(img)
             # labels, cords, confids = results.xyxyn[0][:, -1].numpy(), results.xyxyn[0][:, :-2].numpy(), results.xyxyn[0][:, -2].numpy()
             df = results.pandas().xyxy[0]
