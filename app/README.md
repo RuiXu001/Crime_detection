@@ -12,3 +12,4 @@ Modified:
 * Save text: add cls. the output is: frame, id, cls, bbox_left, bbox_top, bbox_right, bbox_bottom, -1, -1, -1, nr_sources
 ![image](https://user-images.githubusercontent.com/110147375/200984480-14492b1d-959b-40e6-882b-e39f618f864a.png)
 
+* add tracking line
